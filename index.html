@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz App</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-blue-100 font-sans">
+    <h1 class="text-4xl font-bold mb-4 mt-10 ml-96 px-52">SIMPLE QUIZ APP</h1>
+    <div id="question-container" class="max-w-2xl mx-auto mt-20  p-6 bg-blue-50 shadow-2xl rounded-2xl">
+        
+            <p id="question" class="text-2xl font-bold mb-4"></p>
+            <input type="radio" name="answers" id="a" value="" class="mr-2">
+            <label for="a" id="option_1"class="text-lg"></label><br>
+
+            <input type="radio" name="answers" id="b" value="" class="mr-2">
+            <label for="b" id="option_2" class="text-lg"></label><br>
+
+            <input type="radio" name="answers" id="c" value="" class="mr-2">
+            <label for="c" id="option_3" class="text-lg"></label><br>
+
+            <input type="radio" name="answers" id="d" value="" class="mr-2">
+            <label for="d" id="option_4" class="text-lg"></label><br>
+            <p id="result"class=" mt-4 text-xl" value=""></p><br>
+            <div class="mt-4 flex space-x-4">
+                
+                
+            <button type="button" id="prevbtn" onclick="prev()" class="bg-gray-500 text-white py-2 px-4 rounded hover:bg-gray-600 border-2 border-black">Back</button>
+            <button type="submit" id="submitbtn" onclick="verify()"class="bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600 border-2 border-black">Submit</button>
+            <button type="button" id="nextbtn" onclick="next()" class="bg-gray-500 text-white py-2 px-4 rounded hover:bg-gray-600 border-2 border-black">Next</button>
+        </div>
+    
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
